@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Contacts</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="homepage.html"><i class="fas fa-code"></i></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="homepage.html"><i class="fas fa-portrait"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html"><i class="far fa-file-pdf"></i> Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="resume.html"><i class="fas fa-tasks"></i> Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacts.html"><i class="far fa-address-book"></i> Contacts</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<!-- Contacts and form -->
+    <h3 id="contactsTitle" class="gfonts">Contact Info & Social Media</h3>
+    <div class="container">
+        <ul class="list-group">
+            <li class="list-group-item"><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/nafee.kazi">Facebook</a></li>
+            <li class="list-group-item"><i class="far fa-envelope"></i> nafeek30@gmail.com</li>
+            <li class="list-group-item"><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/nafeek30/">Instagram</a></li>
+            <li class="list-group-item"><i class="fab fa-snapchat-square"></i> Nafeek30</li>
+        </ul>
+    </div>
+
+    <h3 id="contactsTitle" class="gfonts questions">Got Qestions?</h3>
+        <div class="container">
+            <div>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputName">Name</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label for="inputReason">Reason for Contact</label>
+                        <select id="inputReason" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>Have a question</option>
+                            <option>Hire as contractor</option>
+                            <option>Request more sample projects</option>
+                            <option>Others</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label for="inputText">Question</label>
+                        <textarea name="message" rows="10" cols="30"></textarea>
+                        <br />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+<!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="homepage.html"><i class="fas fa-code"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="homepage.html"><i class="fas fa-portrait"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html"><i class="far fa-file-pdf"></i> Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="resume.html"><i class="fas fa-tasks"></i> Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacts.html"><i class="far fa-address-book"></i> Contacts</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<!-- Project list -->
+    <h3 id="projectTitle" class="gfonts">Past Projects</h3>
+    <section id="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 d-flex align-items-stretch">
+                    <div class="card">
+                        <img class="card-img-top" src="images/gallery.jpeg" alt="" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Personal Photo Gallery</h5>
+                            <p class="card-text">
+                                This is a static website of photo gallery that I made when I was learning front end.
+                            </p>
+                            <a href="images/gallery.jpeg" class="card-link mt-auto text-center">Project Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4 d-flex align-items-stretch">
+                    <div class="card">
+                        <img class="card-img-top" src="images/project2.jpeg" alt="" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Wheelchair Data Website</h5>
+                            <p class="card-text">
+                                This is a group project that I created for my Software Engineering class at UCO. We created a 
+                                phone app to collect locomotion data of wheelchair users and upload them on our website to
+                                analyze their activity.
+                            </p>
+                            <a href="images/project2.jpeg" class="card-link mt-auto text-center">Project Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
