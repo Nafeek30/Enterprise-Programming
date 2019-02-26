@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\" />
-    <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\styles\" />
   </ItemGroup>
 
@@ -15,16 +14,4 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Content Remove="wwwroot\images\profile.jpeg" />
-    <Content Remove="wwwroot\images\gallery.jpeg" />
-    <Content Remove="wwwroot\images\background.png" />
-    <Content Remove="wwwroot\images\project2.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="wwwroot\images\profile.jpeg" />
-    <None Include="wwwroot\images\gallery.jpeg" />
-    <None Include="wwwroot\images\background.png" />
-    <None Include="wwwroot\images\project2.jpeg" />
-  </ItemGroup>
 </Project>
