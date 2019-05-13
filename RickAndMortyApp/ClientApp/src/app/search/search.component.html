@@ -1,0 +1,46 @@
+<!-- Page to display the search form. It's also the homepage -->
+<form>
+    <div class="form-group">
+        <label for="searchString">Character Name</label>
+        <!-- we use a two way binding to use the searchString from search.components.ts so we can pass this on and the same below for isAlive -->
+        <input type="text" [(ngModel)]="searchString" class="form-control" id="searchString" name="searchString" placeholder="Enter character name">
+    </div>
+    <div class="form-group form-check">
+        <input type="checkbox" [(ngModel)]="isAlive" class="form-check-input" id="isAlive" name="isAlive">
+        <label class="form-check-label" for="isAlive">Is character alive?</label>
+    </div>
+<!-- whenever user clicks on it we want to execute the search funtion from search.components.ts -->
+    <button type="button" (click)="search()" class="btn btn-primary">Search</button>
+</form>
+
+<!-- using our own pipe -->
+<div appSurpriseWubba *ngIf="searchString">
+  {{searchString | lowercase | wubba}}
+<!-- it outputs wubbalubbadub and then whatever name we put in the search bar  -->
+</div>
+
+
+<!-- adding some additional states like a loading state -->
+<div *ngIf="loading">
+    Loading...
+</div>
+
+<!-- use ngIf to decide whether we're displaying results or not to make sure we dont display null when nothing is searched for -->
+<div *ngIf="searchResults">
+<!-- loop through and show the number of characters found in a table -->
+    <table class="table">
+        <tr>
+            <th>Name</th>
+            <th>Image</th>
+        </tr>
+<!-- loop using *ngFor here -->
+        <tr *ngFor="let character of searchResults">
+            <td><a [routerLink]='["/character", character.id]'>{{character.name}}</a></td>
+            <td><img [src]="character.image" /></td>
+        </tr>
+    </table>
+</div>
+<div class="alert alert-warning" role="alert" *ngIf="searchFailed">
+  Search returned no results. Please try again.
+</div>
+

@@ -1,0 +1,7 @@
+<div class="card" style="width: 18rem;">
+  <img [src]="character.image" class="card-img-top" alt="...">
+  <div class="card-body">
+<!-- double curly is telling angular to look at the state of the component with this name and use that -->
+    <p class="card-text"> {{character.name}} - {{character.status}} - {{character.species}}</p>
+  </div>
+</div>

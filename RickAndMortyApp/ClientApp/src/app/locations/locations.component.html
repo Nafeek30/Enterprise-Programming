@@ -1,0 +1,19 @@
+<h2>Location list</h2>
+
+<table class="table">
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Dimension</th>
+  </tr>
+  <!-- pulling the results array of locations from locationResults -->
+  <tr *ngFor="let location of locationResults.results">
+    <td>{{location.name}}</td>
+    <td>{{location.type}}</td>
+    <td>{{location.dimension}}</td>
+  </tr>
+</table>
+<div>
+  <button class="btn-primary" (click)="previousPage()">Previous</button>
+  <button class="btn-primary" (click)="nextPage()">Next</button>
+</div>

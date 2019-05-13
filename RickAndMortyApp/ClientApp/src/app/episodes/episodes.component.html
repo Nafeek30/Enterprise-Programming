@@ -1,0 +1,19 @@
+<h2>Episode list</h2>
+
+<table class="table">
+  <tr>
+    <th>Name</th>
+    <th>Air Date</th>
+    <th>Episode</th>
+  </tr>
+  <!-- pulling the results array of episodes from episodeResults -->
+  <tr *ngFor="let episode of episodeResults.results">
+    <td>{{episode.name}}</td>
+    <td>{{episode.air_date}}</td>
+    <td>{{episode.episode}}</td>
+  </tr>
+</table>
+<div>
+  <button class="btn-primary" (click)="previousPage()">Previous</button>
+  <button class="btn-primary" (click)="nextPage()">Next</button>
+</div>

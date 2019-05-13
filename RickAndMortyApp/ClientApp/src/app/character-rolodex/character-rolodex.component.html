@@ -1,0 +1,22 @@
+<!-- view all characters -->
+
+<!-- Binding the name input from character.ts file to here -->
+<!-- DONT FORGET TO ADD A SECOND QUOTATION WRAPPER AROUND STRINGS -->
+<!--<app-character [name]="characterName" [isDead]="isCharacterDead" [imageUrl]="characterImageUrl"></app-character>-->
+<!--<app-character [name]="'Rick'" [isDead]="true" [imageUrl]="'https://rickandmortyapi.com/api/character/avatar/1.jpeg'" [species]="'human'"></app-character>-->
+
+
+
+  <div class="row">
+    <!-- make each characters take up 3 col space in the grid for each character result we find -->
+    <!-- characterResults.results is coming from the character-search-results.ts file's results var -->
+    <div *ngFor="let character of characterResults.results" class="col-sm-6">
+      <app-character [character]="character"></app-character>
+    </div>
+  </div>
+
+  <div>
+    <button class="btn-primary" (click)="previousPage()">Previous</button>
+    <button class="btn-primary" (click)="nextPage()">Next</button>
+  </div>
+
